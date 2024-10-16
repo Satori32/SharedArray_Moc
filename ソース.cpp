@@ -1,3 +1,4 @@
+/** /
 #include <stdio.h>
 
 #include "SharedPointer.h"
@@ -20,6 +21,9 @@ bool Free(SharedMemmory<T>& In) {
 
 	return Free(In.S);
 }
+/**/
+
+#include "SharedMemmory.h"
 
 int main() {
 	SharedMemmory<int> S = ConstructSharedMemory<int>(ConstructMemory<int>(16));
