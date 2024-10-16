@@ -16,7 +16,7 @@ SharedMemmory<T> ConstructSharedMemory(const Memory<T>& In) {
 }
 template<class T>
 bool Free(SharedMemmory<T>& In) {
-	if (Free(In) == false) { return false; }
+	if (Free(In.S) == false) { return false; }
 
-	return Free(NULL);
+	return Free(In.S);
 }
