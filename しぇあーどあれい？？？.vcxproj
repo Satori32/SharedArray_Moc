@@ -129,12 +129,14 @@
   <ItemGroup>
     <ClCompile Include="MemoryAllocator.cpp" />
     <ClCompile Include="ReferenceCounter.cpp" />
+    <ClCompile Include="SharedMemmory.cpp" />
     <ClCompile Include="SharedPointer.cpp" />
     <ClCompile Include="ソース.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MemoryAllocator.h" />
     <ClInclude Include="ReferenceCounter.h" />
+    <ClInclude Include="SharedMemmory.h" />
     <ClInclude Include="SharedPointer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

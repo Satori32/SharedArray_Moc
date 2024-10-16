@@ -20,3 +20,12 @@ bool Free(SharedMemmory<T>& In) {
 
 	return Free(In.S);
 }
+
+int main() {
+	SharedMemmory<int> S = ConstructSharedMemory<int>(ConstructMemory<int>(16));
+
+
+	Free(S);
+
+	return 0;
+}
